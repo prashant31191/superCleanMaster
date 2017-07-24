@@ -27,19 +27,19 @@ import com.yzy.supercleanmaster.utils.T;
 import java.lang.reflect.Field;
 import java.util.List;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 
 
 public class ShortCutActivity extends BaseActivity implements CoreService.OnPeocessActionListener {
 
-    @InjectView(R.id.layout_anim)
+    @BindView(R.id.layout_anim)
     RelativeLayout layoutAnim;
 
-    @InjectView(R.id.mRelativeLayout)
+    @BindView(R.id.mRelativeLayout)
     RelativeLayout mRelativeLayout;
 
     private Rect rect;
-    @InjectView(R.id.clean_light_img)
+    @BindView(R.id.clean_light_img)
     ImageView cleanLightImg;
 
 

@@ -26,7 +26,7 @@ public class SplishActivity extends BaseActivity {
     private Animation mFadeInScale;
     private Animation mFadeOut;
 
-    //  @InjectView(R.id.image)
+    //  @BindView(R.id.image)
     ImageView mImageView;
 
     public static final String ACTION_INSTALL_SHORTCUT = "com.android.launcher.action.INSTALL_SHORTCUT";

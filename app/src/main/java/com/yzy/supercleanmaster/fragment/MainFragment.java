@@ -24,18 +24,18 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 
 public class MainFragment extends BaseFragment {
 
-    @InjectView(R.id.arc_store)
+    @BindView(R.id.arc_store)
     ArcProgress arcStore;
 
-    @InjectView(R.id.arc_process)
+    @BindView(R.id.arc_process)
     ArcProgress arcProcess;
-    @InjectView(R.id.capacity)
+    @BindView(R.id.capacity)
     TextView capacity;
 
     Context mContext;
@@ -50,7 +50,7 @@ public class MainFragment extends BaseFragment {
         // TODO Auto-generated method stub
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        ButterKnife.inject(this, view);
+        ButterKnife.bind(this, view);
         mContext = getActivity();
 
         return view;
@@ -168,7 +168,7 @@ public class MainFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.reset(this);
+        //ButterKnife.reset(this);
     }
 
 

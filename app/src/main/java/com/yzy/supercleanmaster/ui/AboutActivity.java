@@ -8,11 +8,11 @@ import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
 import com.yzy.supercleanmaster.utils.AppUtil;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 
 public class AboutActivity extends BaseSwipeBackActivity {
 
-    @InjectView(R.id.subVersion)
+    @BindView(R.id.subVersion)
     TextView subVersion;
 
     @Override

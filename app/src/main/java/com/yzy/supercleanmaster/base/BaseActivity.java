@@ -59,7 +59,7 @@ public abstract class BaseActivity extends FragmentActivity {
 	public void setContentView(int layoutResID) {
 		// TODO Auto-generated method stub
 		super.setContentView(layoutResID);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 	}
 

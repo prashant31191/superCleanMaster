@@ -43,7 +43,7 @@ import com.yzy.supercleanmaster.widget.textcounter.formatters.DecimalFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 
@@ -51,33 +51,33 @@ public class MemoryCleanActivity extends BaseSwipeBackActivity implements OnDism
 
     ActionBar ab;
 
-    @InjectView(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListView;
 
-    @InjectView(R.id.wave_view)
+    @BindView(R.id.wave_view)
     WaveView mwaveView;
 
 
-    @InjectView(R.id.header)
+    @BindView(R.id.header)
     RelativeLayout header;
     List<AppProcessInfo> mAppProcessInfos = new ArrayList<>();
     ClearMemoryAdapter mClearMemoryAdapter;
 
-    @InjectView(R.id.textCounter)
+    @BindView(R.id.textCounter)
     CounterView textCounter;
-    @InjectView(R.id.sufix)
+    @BindView(R.id.sufix)
     TextView sufix;
     public long Allmemory;
 
-    @InjectView(R.id.bottom_lin)
+    @BindView(R.id.bottom_lin)
     LinearLayout bottom_lin;
 
-    @InjectView(R.id.progressBar)
+    @BindView(R.id.progressBar)
     View mProgressBar;
-    @InjectView(R.id.progressBarText)
+    @BindView(R.id.progressBarText)
     TextView mProgressBarText;
 
-    @InjectView(R.id.clear_button)
+    @BindView(R.id.clear_button)
     Button clearButton;
     private static final int INITIAL_DELAY_MILLIS = 300;
     SwingBottomInAnimationAdapter swingBottomInAnimationAdapter;

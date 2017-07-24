@@ -20,14 +20,14 @@ import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseFragment;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.BindView;
 
 
 public class DeciveInfoFragment extends BaseFragment {
 
-    @InjectView(R.id.webView)
+    @BindView(R.id.webView)
     WebView mWebView;
-    @InjectView(R.id.progress_bar)
+    @BindView(R.id.progress_bar)
     ProgressBar mProgressBar;
     Context mContext;
     @Override
@@ -36,7 +36,7 @@ public class DeciveInfoFragment extends BaseFragment {
         // TODO Auto-generated method stub
 
         View view = inflater.inflate(R.layout.fragment_device_info, container, false);
-        ButterKnife.inject(this, view);
+        ButterKnife.bind(this, view);
         mContext = getActivity();
 
         return view;
@@ -58,7 +58,7 @@ public class DeciveInfoFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.reset(this);
+        //ButterKnife.reset(this);
     }
     private void initWebview() {
         // TODO Auto-generated method stub

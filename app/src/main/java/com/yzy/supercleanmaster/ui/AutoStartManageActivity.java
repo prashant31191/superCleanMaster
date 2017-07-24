@@ -23,7 +23,7 @@ import com.yzy.supercleanmaster.utils.SystemBarTintManager;
 import com.yzy.supercleanmaster.utils.UIElementsHelper;
 import com.yzy.supercleanmaster.views.SlidingTab;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 
 
 public class AutoStartManageActivity extends BaseSwipeBackActivity {
@@ -34,10 +34,10 @@ public class AutoStartManageActivity extends BaseSwipeBackActivity {
     Resources res;
 
 
-    @InjectView(R.id.tabs)
+    @BindView(R.id.tabs)
     SlidingTab tabs;
 
-    @InjectView(R.id.pagerFragmentTask)
+    @BindView(R.id.pagerFragmentTask)
     ViewPager pager;
 
     private MyPagerAdapter adapter;

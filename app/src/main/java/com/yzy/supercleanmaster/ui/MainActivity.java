@@ -29,15 +29,15 @@ import com.yzy.supercleanmaster.utils.UIElementsHelper;
 
 import java.util.Date;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 
 
 public class MainActivity extends BaseActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-    @InjectView(R.id.container)
+    @BindView(R.id.container)
     FrameLayout container;
 
-    @InjectView(R.id.drawer_layout)
+    @BindView(R.id.drawer_layout)
     DrawerLayout mDrawerLayout;
 
     ActionBar ab;

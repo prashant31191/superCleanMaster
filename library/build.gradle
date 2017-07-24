@@ -5,11 +5,11 @@ android {
         config {
         }
     }
-    compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdkVersion 15
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -22,6 +22,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:25.3.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

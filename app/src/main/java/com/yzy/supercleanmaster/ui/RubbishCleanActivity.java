@@ -44,7 +44,7 @@ import com.yzy.supercleanmaster.widget.textcounter.formatters.DecimalFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 
@@ -69,34 +69,34 @@ public class RubbishCleanActivity extends BaseSwipeBackActivity implements OnDis
     private boolean mAlreadyScanned = false;
     private boolean mAlreadyCleaned = false;
 
-    @InjectView(R.id.listview)
+    @BindView(R.id.listview)
     ListView mListView;
 
-    @InjectView(R.id.empty)
+    @BindView(R.id.empty)
     TextView mEmptyView;
 
-    @InjectView(R.id.header)
+    @BindView(R.id.header)
     RelativeLayout header;
 
 
-    @InjectView(R.id.textCounter)
+    @BindView(R.id.textCounter)
     CounterView textCounter;
-    @InjectView(R.id.sufix)
+    @BindView(R.id.sufix)
     TextView sufix;
 
-    @InjectView(R.id.progressBar)
+    @BindView(R.id.progressBar)
     View mProgressBar;
-    @InjectView(R.id.progressBarText)
+    @BindView(R.id.progressBarText)
     TextView mProgressBarText;
 
     RublishMemoryAdapter rublishMemoryAdapter;
 
     List<CacheListItem> mCacheListItem = new ArrayList<>();
 
-    @InjectView(R.id.bottom_lin)
+    @BindView(R.id.bottom_lin)
     LinearLayout bottom_lin;
 
-    @InjectView(R.id.clear_button)
+    @BindView(R.id.clear_button)
     Button clearButton;
 
     private ServiceConnection mServiceConnection = new ServiceConnection() {

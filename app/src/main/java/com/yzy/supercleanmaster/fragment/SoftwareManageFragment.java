@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.BindView;
 
 
 public class SoftwareManageFragment extends BaseFragment {
@@ -41,17 +41,17 @@ public class SoftwareManageFragment extends BaseFragment {
     private int position; // 0:应用软件，2 系统软件
     SoftwareAdapter mAutoStartAdapter;
 
-    @InjectView(R.id.listview)
+    @BindView(R.id.listview)
     ListView listview;
 
 
-    @InjectView(R.id.topText)
+    @BindView(R.id.topText)
     TextView topText;
     List<AppInfo> userAppInfos = null;
     List<AppInfo> systemAppInfos = null;
-    @InjectView(R.id.progressBar)
+    @BindView(R.id.progressBar)
     View mProgressBar;
-    @InjectView(R.id.progressBarText)
+    @BindView(R.id.progressBarText)
     TextView mProgressBarText;
 
     private Method mGetPackageSizeInfoMethod;
@@ -74,7 +74,7 @@ public class SoftwareManageFragment extends BaseFragment {
         // TODO Auto-generated method stub
 
         View view = inflater.inflate(R.layout.fragment_software, container, false);
-        ButterKnife.inject(this, view);
+        ButterKnife.bind(this, view);
         mContext = getActivity();
         try {
             mGetPackageSizeInfoMethod = mContext.getPackageManager().getClass().getMethod(
@@ -260,7 +260,7 @@ public class SoftwareManageFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.reset(this);
+       // ButterKnife.reset(this);
     }
 
 }

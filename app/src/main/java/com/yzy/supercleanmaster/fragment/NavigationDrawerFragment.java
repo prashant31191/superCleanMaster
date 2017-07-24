@@ -46,7 +46,7 @@ public class NavigationDrawerFragment extends BaseFragment {
 
         View view = inflater.inflate(R.layout.fragment_navigation_drawer,
                 container, false);
-        ButterKnife.inject(this, view);
+        ButterKnife.bind(this, view);
         return view;
     }
 
@@ -136,6 +136,6 @@ public class NavigationDrawerFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.reset(this);
+       // ButterKnife.reset(this);
     }
 }

@@ -25,8 +25,9 @@ import com.yzy.supercleanmaster.utils.T;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+
 import butterknife.OnClick;
 
 
@@ -39,15 +40,15 @@ public class AutoStartFragment extends BaseFragment {
     private int position; // 0:普通软件，2 系统软件
     AutoStartAdapter mAutoStartAdapter;
 
-    @InjectView(R.id.listview)
+    @BindView(R.id.listview)
     ListView listview;
 
-    @InjectView(R.id.bottom_lin)
+    @BindView(R.id.bottom_lin)
     LinearLayout bottom_lin;
 
-    @InjectView(R.id.disable_button)
+    @BindView(R.id.disable_button)
     Button disableButton;
-    @InjectView(R.id.topText)
+    @BindView(R.id.topText)
     TextView topText;
     List<AutoStartInfo> isSystemAuto = null;
     List<AutoStartInfo> noSystemAuto = null;
@@ -80,7 +81,7 @@ public class AutoStartFragment extends BaseFragment {
         // TODO Auto-generated method stub
 
         View view = inflater.inflate(R.layout.fragment_auto_start, container, false);
-        ButterKnife.inject(this, view);
+        ButterKnife.bind(this, view);
         mContext = getActivity();
 
         return view;
@@ -192,7 +193,7 @@ public class AutoStartFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.reset(this);
+
     }
 
 }
